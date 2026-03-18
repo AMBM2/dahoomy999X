@@ -6,15 +6,7 @@
       "use": "@vercel/next"
     }
   ],
-  "env": {
-    "DISCORD_CLIENT_ID": "@discord_client_id",
-    "DISCORD_CLIENT_SECRET": "@discord_client_secret",
-    "NEXTAUTH_URL": "@nextauth_url",
-    "NEXTAUTH_SECRET": "@nextauth_secret",
-    "NEXT_PUBLIC_ADMIN_DISCORD_ID": "@admin_discord_id",
-    "DISCORD_BOT_TOKEN": "@discord_bot_token",
-    "DISCORD_WEBHOOK_URL": "@discord_webhook_url"
-  },
+
   "headers": [
     {
       "source": "/api/(.*)",
