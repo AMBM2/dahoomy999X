@@ -15,11 +15,6 @@
     "DISCORD_BOT_TOKEN": "@discord_bot_token",
     "DISCORD_WEBHOOK_URL": "@discord_webhook_url"
   },
-  "functions": {
-    "api/**/*.ts": {
-      "maxDuration": 30
-    }
-  },
   "headers": [
     {
       "source": "/api/(.*)",
