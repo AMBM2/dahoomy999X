@@ -1,0 +1,324 @@
+[
+  {
+    "id": "question-1773789348386-69whe21oy",
+    "categoryId": "cat-minecraft",
+    "type": "video",
+    "text": "كم كان فيه بقرة في الفيديو",
+    "answer": "3",
+    "choices": [],
+    "mediaUrl": null,
+    "youtubeUrl": "https://www.youtube.com/watch?v=LwxCiMMQsUI&list=PLAs0asPQcWo5Odb6wmxIYrZ2OcHklRlt6",
+    "timestamp": null,
+    "clipStart": "6:26",
+    "clipEnd": "6:40",
+    "isRiddle": false,
+    "points": 100,
+    "gameMode": "SeenGeem",
+    "letter": null,
+    "createdAt": "2026-03-17T23:15:48.386Z",
+    "createdBy": "1186739142231605248"
+  },
+  {
+    "id": "question-1773789664167-1vsx3mckf",
+    "categoryId": "cat-minecraft",
+    "type": "image",
+    "text": "في أي  حلقة دحومي (عبدالحمن) سلسه ماين كرافت ظهر وجهه",
+    "answer": "الحلقة (21)",
+    "choices": [],
+    "mediaUrl": "https://i.postimg.cc/jSvKxBhz/image.png",
+    "youtubeUrl": null,
+    "timestamp": null,
+    "clipStart": null,
+    "clipEnd": null,
+    "isRiddle": false,
+    "points": 1000,
+    "gameMode": "SeenGeem",
+    "letter": null,
+    "createdAt": "2026-03-17T23:21:04.167Z",
+    "createdBy": "1186739142231605248"
+  },
+
+  {
+    "id": "cat-mc-q1-50",
+    "categoryId": "cat-minecraft",
+    "type": "text",
+    "text": "ما هو اسم العدو الأخضر الذي ينفجر عندما يقترب منك؟",
+    "answer": "الكريبر",
+    "points": 50,
+    "gameMode": "SeenGeem"
+  },
+  {
+    "id": "cat-mc-q2-50",
+    "categoryId": "cat-minecraft",
+    "type": "text",
+    "text": "ما اسم الأداة التي تستخدمها لحفر الحجارة والخام بسرعة؟",
+    "answer": "البيك اكس",
+    "points": 50,
+    "gameMode": "SeenGeem"
+  },
+  {
+    "id": "cat-mc-q3-50",
+    "categoryId": "cat-minecraft",
+    "type": "choices",
+    "text": "أي من هذه النباتات يُستخدم لصناعة الخبز؟",
+    "answer": "القمح",
+    "choices": ["الشمندر", "القمح", "البطاطس", "الجزر"],
+    "points": 50,
+    "gameMode": "SeenGeem"
+  },
+  {
+    "id": "cat-mc-q4-50",
+    "categoryId": "cat-minecraft",
+    "type": "text",
+    "text": "ما اسم الحيوان الذي يعطيك صوفًا عندما تقصه بالمقص؟",
+    "answer": "الخروف",
+    "points": 50,
+    "gameMode": "SeenGeem"
+  },
+  {
+    "id": "cat-mc-q5-50",
+    "categoryId": "cat-minecraft",
+    "type": "text",
+    "text": "ما هي البلوكة التي تنام عليها لحفظ نقطة السبون؟",
+    "answer": "السرير",
+    "points": 50,
+    "gameMode": "SeenGeem"
+  },
+
+  {
+    "id": "cat-mc-q6-100",
+    "categoryId": "cat-minecraft",
+    "type": "choices",
+    "text": "أي أداة تكسر الخشب بأسرع شكل؟",
+    "answer": "الفأس",
+    "choices": ["السيف", "الفأس", "البيك اكس", "الهَو"],
+    "points": 100,
+    "gameMode": "SeenGeem"
+  },
+  {
+    "id": "cat-mc-q7-100",
+    "categoryId": "cat-minecraft",
+    "type": "text",
+    "text": "ما اسم الأكل الذي تُصنعه من البقر ويُرجع كثير من الجوع؟",
+    "answer": "ستيك اللحم المطبوخ",
+    "points": 100,
+    "gameMode": "SeenGeem"
+  },
+  {
+    "id": "cat-mc-q8-100",
+    "categoryId": "cat-minecraft",
+    "type": "text",
+    "text": "ما اسم البايوم الذي يكون فيه ثلج كثير وأشجار سبروس؟",
+    "answer": "الغابة الثلجية",
+    "points": 100,
+    "gameMode": "SeenGeem"
+  },
+  {
+    "id": "cat-mc-q9-100",
+    "categoryId": "cat-minecraft",
+    "type": "choices",
+    "text": "أي مورد تحتاجه لصناعة بوابة الهول؟",
+    "answer": "الأوبسيديان",
+    "choices": ["الحديد", "الذهب", "الأوبسيديان", "الحجر"],
+    "points": 100,
+    "gameMode": "SeenGeem"
+  },
+  {
+    "id": "cat-mc-q10-100",
+    "categoryId": "cat-minecraft",
+    "type": "text",
+    "text": "ما اسم الوحش الذي يطلق أسهماً من بعيد؟",
+    "answer": "الهيكل العظمي",
+    "points": 100,
+    "gameMode": "SeenGeem"
+  },
+
+  {
+    "id": "cat-mc-q11-300",
+    "categoryId": "cat-minecraft",
+    "type": "text",
+    "text": "ما اسم العالم الذي يوجد فيه تنين الإند؟",
+    "answer": "الإند",
+    "points": 300,
+    "gameMode": "SeenGeem"
+  },
+  {
+    "id": "cat-mc-q12-300",
+    "categoryId": "cat-minecraft",
+    "type": "choices",
+    "text": "أي من هذه الكتل تحتاجها لصناعة منارة (Beacon) بكامل قوتها؟",
+    "answer": "كتل حديد أو دايموند أو زمرد أو ذهب",
+    "choices": ["كتل خشب", "كتل فحم", "كتل حديد أو دايموند أو زمرد أو ذهب", "كتل طين"],
+    "points": 300,
+    "gameMode": "SeenGeem"
+  },
+  {
+    "id": "cat-mc-q13-300",
+    "categoryId": "cat-minecraft",
+    "type": "text",
+    "text": "ما اسم البلوكة التي تدمج فيها الكتب المسحورة مع الدروع والأدوات؟",
+    "answer": "السندان (Anvil)",
+    "points": 300,
+    "gameMode": "SeenGeem"
+  },
+  {
+    "id": "cat-mc-q14-300",
+    "categoryId": "cat-minecraft",
+    "type": "text",
+    "text": "من أي خام تحصل على الدايموند؟",
+    "answer": "خام الدايموند الأزرق في الأعماق",
+    "points": 300,
+    "gameMode": "SeenGeem"
+  },
+  {
+    "id": "cat-mc-q15-300",
+    "categoryId": "cat-minecraft",
+    "type": "choices",
+    "text": "أين تجد عادةً حصانًا لترويضه؟",
+    "answer": "في السهول",
+    "choices": ["في المحيط", "في الجبال الثلجية", "في السهول", "في الجحيم"],
+    "points": 300,
+    "gameMode": "SeenGeem"
+  },
+
+  {
+    "id": "cat-mc-q16-500",
+    "categoryId": "cat-minecraft",
+    "type": "choices",
+    "text": "كم تحتاج من عيون الإندر كحد أقصى لتفعيل بوابة الإند؟",
+    "answer": "12",
+    "choices": ["6", "8", "10", "12"],
+    "points": 500,
+    "gameMode": "SeenGeem"
+  },
+  {
+    "id": "cat-mc-q17-500",
+    "categoryId": "cat-minecraft",
+    "type": "text",
+    "text": "ما اسم المخلوق الذي يعيش في الحمم ويمكن ركوبه في الهول؟",
+    "answer": "السترَيدر",
+    "points": 500,
+    "gameMode": "SeenGeem"
+  },
+  {
+    "id": "cat-mc-q18-500",
+    "categoryId": "cat-minecraft",
+    "type": "text",
+    "text": "ما اسم القرية التي تهاجمها مجموعة من الـ Pillagers في حدث الغزو؟",
+    "answer": "القرية التي فعّلت فيها تأثير Bad Omen",
+    "points": 500,
+    "gameMode": "SeenGeem"
+  },
+  {
+    "id": "cat-mc-q19-500",
+    "categoryId": "cat-minecraft",
+    "type": "choices",
+    "text": "أي إنشانت يحميك أكثر من ضرر السقوط؟",
+    "answer": "Feather Falling",
+    "choices": ["Depth Strider", "Feather Falling", "Aqua Affinity", "Thorns"],
+    "points": 500,
+    "gameMode": "SeenGeem"
+  },
+  {
+    "id": "cat-mc-q20-500",
+    "categoryId": "cat-minecraft",
+    "type": "text",
+    "text": "ما اسم البلوكة التي تحول خامات الحديد والذهب إلى إنغوت مباشرة عند تكسيرها؟",
+    "answer": "Blast Furnace (الفرن السريع)",
+    "points": 500,
+    "gameMode": "SeenGeem"
+  },
+
+  {
+    "id": "cat-mc-q21-1000",
+    "categoryId": "cat-minecraft",
+    "type": "text",
+    "text": "ما اسم المادة التي تصنع منها إنغوت النذر رايت؟",
+    "answer": "٤ سكراب نذر رايت مع ٤ ذهب",
+    "points": 1000,
+    "gameMode": "SeenGeem"
+  },
+  {
+    "id": "cat-mc-q22-1000",
+    "categoryId": "cat-minecraft",
+    "type": "text",
+    "text": "ما اسم المدينة التي تحتوي على Shulker وإليترا في الإند؟",
+    "answer": "مدن الإند والسفن التابعة لها",
+    "points": 1000,
+    "gameMode": "SeenGeem"
+  },
+  {
+    "id": "cat-mc-q23-1000",
+    "categoryId": "cat-minecraft",
+    "type": "choices",
+    "text": "أي من هذه البايومات لا يوجد بها عادةً شجر؟",
+    "answer": "الصحراء",
+    "choices": ["الغابة", "الصحراء", "السهول", "التايغا"],
+    "points": 1000,
+    "gameMode": "SeenGeem"
+  },
+  {
+    "id": "cat-mc-q24-1000",
+    "categoryId": "cat-minecraft",
+    "type": "text",
+    "text": "ما اسم الوحش القوي الذي يعيش في الكهوف العميقة مع الـ Sculk؟",
+    "answer": "الواردن",
+    "points": 1000,
+    "gameMode": "SeenGeem"
+  },
+  {
+    "id": "cat-mc-q25-1000",
+    "categoryId": "cat-minecraft",
+    "type": "text",
+    "text": "أي بلوكة تحتاجها لصناعة طاولة الإنشانت بكامل قوتها (مع الكتب)؟",
+    "answer": "رف الكتب (Bookshelf) حول الطاولة",
+    "points": 1000,
+    "gameMode": "SeenGeem"
+  },
+
+  {
+    "id": "cat-mc-q26-50",
+    "categoryId": "cat-minecraft",
+    "type": "text",
+    "text": "ما اسم أداة الزراعة التي تستعمل لحرث الأرض؟",
+    "answer": "الهَو",
+    "points": 50,
+    "gameMode": "SeenGeem"
+  },
+  {
+    "id": "cat-mc-q27-100",
+    "categoryId": "cat-minecraft",
+    "type": "text",
+    "text": "ما اسم الحيوان الذي يعطيك جلدًا لصناعة الكتب؟",
+    "answer": "البقرة",
+    "points": 100,
+    "gameMode": "SeenGeem"
+  },
+  {
+    "id": "cat-mc-q28-300",
+    "categoryId": "cat-minecraft",
+    "type": "text",
+    "text": "ما اسم العدو الذي يطير في السماء ويهاجمك إذا لم تنم أيامًا؟",
+    "answer": "الفانتوم",
+    "points": 300,
+    "gameMode": "SeenGeem"
+  },
+  {
+    "id": "cat-mc-q29-500",
+    "categoryId": "cat-minecraft",
+    "type": "text",
+    "text": "ما اسم الهيكل الذي يوجد عادةً في الصحراء وتحت أرضه فخ TNT؟",
+    "answer": "معبد الصحراء",
+    "points": 500,
+    "gameMode": "SeenGeem"
+  },
+  {
+    "id": "cat-mc-q30-1000",
+    "categoryId": "cat-minecraft",
+    "type": "text",
+    "text": "ما اسم الجهاز الذي ينقل الأغراض تلقائيًا بين الشِستات؟",
+    "answer": "الهوبّر (Hopper)",
+    "points": 1000,
+    "gameMode": "SeenGeem"
+  }
+]

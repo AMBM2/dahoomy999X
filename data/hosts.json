@@ -1,0 +1,22 @@
+[
+  {
+    "id": "host-1773693395243-1weq3z7rx",
+    "userId": "1277074373911646220",
+    "permissions": [
+      "add_questions",
+      "add_categories"
+    ],
+    "createdAt": "2026-03-16T20:36:35.243Z",
+    "createdBy": "1186739142231605248"
+  },
+  {
+    "id": "host-1773773800777-gvyq7dd12",
+    "userId": "435155549642948618",
+    "permissions": [
+      "add_questions",
+      "add_categories"
+    ],
+    "createdAt": "2026-03-17T18:56:40.777Z",
+    "createdBy": "1186739142231605248"
+  }
+]

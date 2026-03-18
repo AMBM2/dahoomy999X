@@ -1,0 +1,372 @@
+{
+  "categoryId": "sample-science",
+  "categoryName": "Science Sample (First 10 Questions)",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "physics-1",
+      "categoryId": "physics",
+      "type": "text",
+      "difficulty": "easy",
+      "points": 100,
+      "question": "What is Newton's First Law of Motion?",
+      "questionAr": "ما هو القانون الأول لنيوتن للحركة؟",
+      "answer": "An object continues in motion unless acted upon by an external force",
+      "answerAr": "يستمر الجسم في الحركة ما لم تؤثر عليه قوة خارجية",
+      "choices": [
+        "Force equals mass times acceleration",
+        "An object continues in motion unless acted upon by an external force",
+        "For every action there is an equal reaction",
+        "Energy cannot be created or destroyed"
+      ],
+      "choicesAr": [
+        "القوة تساوي الكتلة مضروبة بالتسارع",
+        "يستمر الجسم في الحركة ما لم تؤثر عليه قوة خارجية",
+        "لكل فعل رد فعل مساوي ومعاكس",
+        "الطاقة لا تُنشأ ولا تُفنى"
+      ],
+      "tags": ["physics", "mechanics", "newton"],
+      "stats": {
+        "totalAttempts": 1234,
+        "correctAnswers": 987,
+        "averageTimeSpent": 28,
+        "difficultyIndex": 0.15
+      },
+      "createdAt": "2026-03-16T00:00:00.000Z",
+      "updatedAt": "2026-03-16T00:00:00.000Z",
+      "createdBy": "system"
+    },
+    {
+      "id": "physics-image-1",
+      "categoryId": "physics",
+      "type": "image",
+      "difficulty": "medium",
+      "points": 150,
+      "question": "Which type of wave is shown in this diagram?",
+      "questionAr": "أي نوع من الموجات يظهر في هذا الرسم البياني؟",
+      "answer": "Transverse Wave",
+      "answerAr": "موجة عرضية",
+      "choices": [
+        "Longitudinal Wave",
+        "Transverse Wave",
+        "Standing Wave",
+        "Surface Wave"
+      ],
+      "choicesAr": [
+        "موجة طولية",
+        "موجة عرضية",
+        "موجة واقفة",
+        "موجة سطحية"
+      ],
+      "imagePrompt": {
+        "description": "Scientific illustration showing a transverse wave with clear amplitude and wavelength markings, modern infographic style",
+        "imageUrl": "https://placeholder.com/600x400?text=Transverse+Wave+Diagram",
+        "imageCaption": "Example of a transverse wave pattern",
+        "imageAlt": "Transverse wave diagram showing perpendicular oscillation"
+      },
+      "tags": ["physics", "waves", "visual"],
+      "stats": {
+        "totalAttempts": 856,
+        "correctAnswers": 634,
+        "averageTimeSpent": 42,
+        "difficultyIndex": 0.35
+      },
+      "createdAt": "2026-03-16T00:00:00.000Z",
+      "updatedAt": "2026-03-16T00:00:00.000Z",
+      "createdBy": "system"
+    },
+    {
+      "id": "biology-1",
+      "categoryId": "biology",
+      "type": "text",
+      "difficulty": "easy",
+      "points": 100,
+      "question": "What is the basic unit of life?",
+      "questionAr": "ما هي الوحدة الأساسية للحياة؟",
+      "answer": "Cell",
+      "answerAr": "خلية",
+      "choices": [
+        "Atom",
+        "Cell",
+        "Molecule",
+        "Organ"
+      ],
+      "choicesAr": [
+        "ذرة",
+        "خلية",
+        "جزيء",
+        "عضو"
+      ],
+      "tags": ["biology", "cell-biology", "basics"],
+      "stats": {
+        "totalAttempts": 2345,
+        "correctAnswers": 2100,
+        "averageTimeSpent": 18,
+        "difficultyIndex": 0.08
+      },
+      "createdAt": "2026-03-16T00:00:00.000Z",
+      "updatedAt": "2026-03-16T00:00:00.000Z",
+      "createdBy": "system"
+    },
+    {
+      "id": "chemistry-riddle-1",
+      "categoryId": "chemistry",
+      "type": "riddle",
+      "difficulty": "hard",
+      "points": 250,
+      "question": "I am the most abundant element in the universe. What am I?",
+      "questionAr": "أنا العنصر الأكثر وفرة في الكون. من أنا؟",
+      "answer": "Hydrogen",
+      "answerAr": "الهيدروجين",
+      "tags": ["chemistry", "elements", "riddle", "challenge"],
+      "explanationText": "Hydrogen is the most abundant element in the observable universe, making up about 75% of all matter. It's the simplest element with just one proton and one electron.",
+      "stats": {
+        "totalAttempts": 445,
+        "correctAnswers": 267,
+        "averageTimeSpent": 85,
+        "difficultyIndex": 0.65
+      },
+      "createdAt": "2026-03-16T00:00:00.000Z",
+      "updatedAt": "2026-03-16T00:00:00.000Z",
+      "createdBy": "system"
+    },
+    {
+      "id": "astronomy-video-1",
+      "categoryId": "astronomy",
+      "type": "video",
+      "difficulty": "medium",
+      "points": 150,
+      "question": "What is being explained about the solar system in this video segment?",
+      "questionAr": "ما الذي يتم شرحه عن النظام الشمسي في هذا الجزء من الفيديو؟",
+      "answer": "Planetary Orbits and Distances",
+      "answerAr": "مدارات الكواكب والمسافات",
+      "choices": [
+        "Formation of black holes",
+        "Planetary Orbits and Distances",
+        "Properties of comets",
+        "Solar flares and earthquakes"
+      ],
+      "choicesAr": [
+        "تشكل الثقوب السوداء",
+        "مدارات الكواكب والمسافات",
+        "خصائص المذنبات",
+        "انفجارات شمسية وزلازل"
+      ],
+      "videoData": {
+        "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "duration": 480,
+        "startTime": 45,
+        "endTime": 120,
+        "caption": "Understanding the Planetary System",
+        "isYoutube": true
+      },
+      "tags": ["astronomy", "video", "solar-system"],
+      "stats": {
+        "totalAttempts": 623,
+        "correctAnswers": 456,
+        "averageTimeSpent": 95,
+        "difficultyIndex": 0.40
+      },
+      "createdAt": "2026-03-16T00:00:00.000Z",
+      "updatedAt": "2026-03-16T00:00:00.000Z",
+      "createdBy": "system"
+    },
+    {
+      "id": "biology-image-1",
+      "categoryId": "biology",
+      "type": "image",
+      "difficulty": "medium",
+      "points": 150,
+      "question": "What phase of mitosis is shown in this cell diagram?",
+      "questionAr": "أي مرحلة من مراحل الانقسام الخيطي تظهر في هذا الرسم البياني للخلية؟",
+      "answer": "Metaphase",
+      "answerAr": "الطور المتوسط",
+      "choices": [
+        "Prophase",
+        "Metaphase",
+        "Anaphase",
+        "Telophase"
+      ],
+      "choicesAr": [
+        "الطور التمهيدي",
+        "الطور المتوسط",
+        "الطور الانفصالي",
+        "الطور النهائي"
+      ],
+      "imagePrompt": {
+        "description": "Educational illustration of a cell in metaphase showing aligned chromosomes on the metaphase plate, modern scientific artwork",
+        "imageUrl": "https://placeholder.com/600x400?text=Cell+Metaphase+Diagram",
+        "imageCaption": "Metaphase - Chromosomes aligned at cell equator",
+        "imageAlt": "Cell diagram showing metaphase stage of mitosis"
+      },
+      "tags": ["biology", "cell-division", "mitosis", "visual"],
+      "stats": {
+        "totalAttempts": 734,
+        "correctAnswers": 512,
+        "averageTimeSpent": 48,
+        "difficultyIndex": 0.42
+      },
+      "createdAt": "2026-03-16T00:00:00.000Z",
+      "updatedAt": "2026-03-16T00:00:00.000Z",
+      "createdBy": "system"
+    },
+    {
+      "id": "genetics-matching-1",
+      "categoryId": "biology",
+      "type": "matching",
+      "difficulty": "hard",
+      "points": 200,
+      "question": "Match the genetic terms with their definitions",
+      "questionAr": "طابق مصطلحات الوراثة مع تعريفاتها",
+      "answer": "Correct matches",
+      "answerAr": "التطابقات الصحيحة",
+      "matchingPairs": [
+        {
+          "left": "Genotype",
+          "right": "The genetic makeup of an organism"
+        },
+        {
+          "left": "Phenotype",
+          "right": "The observable characteristics of an organism"
+        },
+        {
+          "left": "Allele",
+          "right": "Different forms of a gene"
+        },
+        {
+          "left": "Dominant",
+          "right": "An allele that masks the recessive allele"
+        }
+      ],
+      "tags": ["biology", "genetics", "matching"],
+      "stats": {
+        "totalAttempts": 345,
+        "correctAnswers": 198,
+        "averageTimeSpent": 120,
+        "difficultyIndex": 0.58
+      },
+      "createdAt": "2026-03-16T00:00:00.000Z",
+      "updatedAt": "2026-03-16T00:00:00.000Z",
+      "createdBy": "system"
+    },
+    {
+      "id": "math-1",
+      "categoryId": "math",
+      "type": "text",
+      "difficulty": "medium",
+      "points": 150,
+      "question": "What is the square root of 144?",
+      "questionAr": "ما الجذر التربيعي للعدد 144؟",
+      "answer": "12",
+      "answerAr": "12",
+      "choices": [
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "choicesAr": [
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "tags": ["math", "algebra", "roots"],
+      "stats": {
+        "totalAttempts": 1890,
+        "correctAnswers": 1702,
+        "averageTimeSpent": 35,
+        "difficultyIndex": 0.12
+      },
+      "createdAt": "2026-03-16T00:00:00.000Z",
+      "updatedAt": "2026-03-16T00:00:00.000Z",
+      "createdBy": "system"
+    },
+    {
+      "id": "evolution-ordering-1",
+      "categoryId": "biology",
+      "type": "ordering",
+      "difficulty": "hard",
+      "points": 200,
+      "question": "Order these evolutionary stages from earliest to latest",
+      "questionAr": "رتب هذه المراحل التطورية من الأقدم إلى الأحدث",
+      "answer": "Correct sequence",
+      "answerAr": "الترتيب الصحيح",
+      "orderingSequence": [
+        "Formation of Earth (4.5 billion years ago)",
+        "First living organisms (3.5 billion years ago)",
+        "Dinosaurs dominate (200 million years ago)",
+        "First mammals emerge (200 million years ago)",
+        "Human ancestors evolve (6-7 million years ago)"
+      ],
+      "tags": ["biology", "evolution", "ordering", "timeline"],
+      "stats": {
+        "totalAttempts": 456,
+        "correctAnswers": 267,
+        "averageTimeSpent": 150,
+        "difficultyIndex": 0.62
+      },
+      "createdAt": "2026-03-16T00:00:00.000Z",
+      "updatedAt": "2026-03-16T00:00:00.000Z",
+      "createdBy": "system"
+    },
+    {
+      "id": "astronomy-expert-1",
+      "categoryId": "astronomy",
+      "type": "text",
+      "difficulty": "expert",
+      "points": 300,
+      "question": "What is the event horizon of a black hole?",
+      "questionAr": "ما هو حد الحدث لثقب أسود؟",
+      "answer": "The boundary beyond which nothing can escape, not even light",
+      "answerAr": "الحد الذي لا يمكن لأي شيء الهروب منه، حتى الضوء",
+      "choices": [
+        "The boundary beyond which nothing can escape, not even light",
+        "The point where gravity becomes extremely strong",
+        "The outer edge of a black hole's jets",
+        "The temperature at which matter is destroyed"
+      ],
+      "choicesAr": [
+        "الحد الذي لا يمكن لأي شيء الهروب منه، حتى الضوء",
+        "النقطة التي تصبح فيها الجاذبية قوية جداً",
+        "الحافة الخارجية لنفاثات الثقب الأسود",
+        "درجة الحرارة التي تتحطم فيها المادة"
+      ],
+      "tags": ["astronomy", "black-holes", "advanced"],
+      "stats": {
+        "totalAttempts": 234,
+        "correctAnswers": 134,
+        "averageTimeSpent": 65,
+        "difficultyIndex": 0.78
+      },
+      "createdAt": "2026-03-16T00:00:00.000Z",
+      "updatedAt": "2026-03-16T00:00:00.000Z",
+      "createdBy": "system"
+    }
+  ],
+  "generatedAt": "2026-03-16T00:00:00.000Z",
+  "version": "2.0",
+  "stats": {
+    "byType": {
+      "text": 4,
+      "image": 2,
+      "video": 1,
+      "riddle": 1,
+      "matching": 1,
+      "ordering": 1
+    },
+    "byDifficulty": {
+      "easy": 2,
+      "medium": 4,
+      "hard": 3,
+      "expert": 1
+    },
+    "byCategory": {
+      "physics": 2,
+      "biology": 4,
+      "chemistry": 1,
+      "astronomy": 2,
+      "math": 1
+    }
+  }
+}

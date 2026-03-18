@@ -1,0 +1,726 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Theme Variables - Default Neon Blue Theme */
+  --primary-color: #06B6D4;
+  --secondary-color: #0891B2;
+  --accent-color: #06B6D4;
+  --theme-background: oklch(0.14 0.03 240);
+  --theme-card-background: oklch(0.12 0.02 240);
+  --theme-border-color: oklch(0.72 0.14 210 / 0.3);
+
+  /* Neon Blue Dark Theme */
+  --background: oklch(0.14 0.03 240);
+  --foreground: oklch(0.92 0.05 210);
+  --card: oklch(0.22 0.02 240);
+  --card-foreground: oklch(0.92 0.05 210);
+  --popover: oklch(0.18 0.02 240);
+  --popover-foreground: oklch(0.92 0.05 210);
+  --primary: oklch(0.72 0.14 210);
+  --primary-foreground: oklch(0.12 0.02 240);
+  --secondary: oklch(0.25 0.02 240);
+  --secondary-foreground: oklch(0.92 0.05 210);
+  --muted: oklch(0.28 0.02 240);
+  --muted-foreground: oklch(0.72 0.05 210);
+  --accent: oklch(0.68 0.12 210);
+  --accent-foreground: oklch(0.12 0.02 240);
+  --destructive: oklch(0.55 0.22 25);
+  --destructive-foreground: oklch(0.95 0 0);
+  --border: oklch(0.55 0.12 210);
+  --input: oklch(0.25 0.02 240);
+  --ring: oklch(0.72 0.14 210);
+  --chart-1: oklch(0.72 0.14 210);
+  --chart-2: oklch(0.65 0.12 210);
+  --chart-3: oklch(0.55 0.10 210);
+  --chart-4: oklch(0.45 0.08 210);
+  --chart-5: oklch(0.35 0.06 210);
+  --radius: 0.5rem;
+  --sidebar: oklch(0.12 0.02 240);
+  --sidebar-foreground: oklch(0.92 0.05 210);
+  --sidebar-primary: oklch(0.72 0.14 210);
+  --sidebar-primary-foreground: oklch(0.12 0.02 240);
+  --sidebar-accent: oklch(0.25 0.02 240);
+  --sidebar-accent-foreground: oklch(0.92 0.05 210);
+  --sidebar-border: oklch(0.55 0.12 210);
+  --sidebar-ring: oklch(0.72 0.14 210);
+  
+  /* Custom neon blue colors */
+  --gold: oklch(0.72 0.14 210);
+  --gold-light: oklch(0.82 0.12 215);
+  --gold-dark: oklch(0.58 0.14 205);
+  --gold-glow: oklch(0.72 0.14 210 / 0.6);
+  --wood: oklch(0.22 0.03 240);
+  --wood-dark: oklch(0.15 0.04 40);
+  --steel: oklch(0.35 0.02 240);
+  --steel-light: oklch(0.45 0.02 240);
+}
+
+.dark {
+  --background: oklch(0.14 0.03 240);
+  --foreground: oklch(0.92 0.05 210);
+  --card: oklch(0.22 0.02 240);
+  --card-foreground: oklch(0.92 0.05 210);
+  --popover: oklch(0.18 0.02 240);
+  --popover-foreground: oklch(0.92 0.05 210);
+  --primary: oklch(0.72 0.14 210);
+  --primary-foreground: oklch(0.12 0.02 240);
+  --secondary: oklch(0.25 0.02 240);
+  --secondary-foreground: oklch(0.92 0.05 210);
+  --muted: oklch(0.28 0.02 240);
+  --muted-foreground: oklch(0.72 0.05 210);
+  --accent: oklch(0.68 0.12 210);
+  --accent-foreground: oklch(0.12 0.02 240);
+  --destructive: oklch(0.55 0.22 25);
+  --destructive-foreground: oklch(0.95 0 0);
+  --border: oklch(0.55 0.12 210);
+  --input: oklch(0.25 0.02 240);
+  --ring: oklch(0.72 0.14 210);
+  --chart-1: oklch(0.72 0.14 210);
+  --chart-2: oklch(0.65 0.12 210);
+  --chart-3: oklch(0.55 0.10 210);
+  --chart-4: oklch(0.45 0.08 210);
+  --chart-5: oklch(0.35 0.06 210);
+  --sidebar: oklch(0.12 0.02 240);
+  --sidebar-foreground: oklch(0.92 0.05 210);
+  --sidebar-primary: oklch(0.72 0.14 210);
+  --sidebar-primary-foreground: oklch(0.12 0.02 240);
+  --sidebar-accent: oklch(0.25 0.02 240);
+  --sidebar-accent-foreground: oklch(0.92 0.05 210);
+  --sidebar-border: oklch(0.55 0.12 210);
+  --sidebar-ring: oklch(0.72 0.14 210);
+}
+
+/* Dahoomy 999 Theme Color Overrides */
+[data-theme="dahoomy-999"] {
+  --gold: #06b6d4;
+  --gold-light: #22d3ee;
+  --gold-dark: #0891b2;
+  --gold-glow: rgba(6, 182, 212, 0.6);
+  --primary-color: #06b6d4;
+  --secondary-color: #ef4444;
+  --accent-color: #22d3ee;
+}
+
+@theme inline {
+  --font-sans: var(--font-cairo), 'Cairo', 'Geist', 'Geist Fallback';
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-gold-dark: var(--gold-dark);
+  --color-gold-glow: var(--gold-glow);
+  --color-wood: var(--wood);
+  --color-wood-dark: var(--wood-dark);
+  --color-steel: var(--steel);
+  --color-steel-light: var(--steel-light);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* 3D Card Flip Animations */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Gold glow animations - Now Neon Blue */
+@keyframes gold-pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px oklch(0.72 0.15 210 / 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px oklch(0.72 0.15 210 / 0.5);
+  }
+}
+
+.animate-gold-pulse {
+  animation: gold-pulse 2s ease-in-out infinite;
+}
+
+/* Floating animation for particles */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+  }
+  25% {
+    transform: translateY(-10px) translateX(5px);
+  }
+  50% {
+    transform: translateY(0) translateX(10px);
+  }
+  75% {
+    transform: translateY(10px) translateX(5px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Score rolling animation */
+@keyframes roll {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-roll {
+  animation: roll 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Neon glow text - Now Neon Blue */
+.neon-gold {
+  text-shadow: 
+    0 0 5px oklch(0.72 0.14 210 / 0.5),
+    0 0 10px oklch(0.72 0.14 210 / 0.4),
+    0 0 20px oklch(0.72 0.14 210 / 0.3),
+    0 0 40px oklch(0.72 0.14 210 / 0.2);
+}
+
+/* Power-up activation animation */
+@keyframes power-up-activate {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-power-up {
+  animation: power-up-activate 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Power-up exit animation */
+@keyframes power-up-exit {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.animate-power-up-exit {
+  animation: power-up-exit 0.5s ease-out forwards;
+}
+
+/* Card metallic gradient */
+.metallic-card {
+  background: linear-gradient(
+    145deg,
+    oklch(0.38 0.03 240) 0%,
+    oklch(0.28 0.02 240) 50%,
+    oklch(0.32 0.02 240) 100%
+  );
+}
+
+/* Neon Blue border gradient */
+.gold-border {
+  border: 2px solid transparent;
+  background: 
+    linear-gradient(oklch(0.28 0.02 240), oklch(0.28 0.02 240)) padding-box,
+    linear-gradient(135deg, oklch(0.82 0.12 215), oklch(0.58 0.14 205), oklch(0.72 0.14 210)) border-box;
+}
+
+/* Wood texture overlay */
+.wood-texture {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.02' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  background-blend-mode: multiply;
+}
+
+/* Countdown timer animation */
+@keyframes countdown-pulse {
+  0%, 100% {
+    transform: scale(1);
+    color: oklch(0.72 0.14 75);
+  }
+  50% {
+    transform: scale(1.1);
+    color: oklch(0.65 0.25 25);
+  }
+}
+
+.animate-countdown {
+  animation: countdown-pulse 1s ease-in-out infinite;
+}
+
+/* Theme Gateway Animations */
+@keyframes theme-gateway-fade-out {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+
+.animate-gateway-exit {
+  animation: theme-gateway-fade-out 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* Glassmorphism Card Effects */
+@keyframes card-glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.3), inset 0 0 20px rgba(6, 182, 212, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(6, 182, 212, 0.5), inset 0 0 30px rgba(6, 182, 212, 0.2);
+  }
+}
+
+@keyframes card-glow-pulse-gold {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(251, 191, 36, 0.3), inset 0 0 20px rgba(251, 191, 36, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(251, 191, 36, 0.5), inset 0 0 30px rgba(251, 191, 36, 0.2);
+  }
+}
+
+.animate-card-glow-pulse {
+  animation: card-glow-pulse 2s ease-in-out infinite;
+}
+
+.animate-card-glow-pulse-gold {
+  animation: card-glow-pulse-gold 2s ease-in-out infinite;
+}
+
+/* ===== DAHOOMY 999 FLOATING WATERMARK ===== */
+/* Full-screen background watermark with neon glow */
+body[data-theme="dahoomy-999"]::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image: url("/images/dahoomy-999.png");
+  background-size: 50%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.07;
+  filter: drop-shadow(0 0 15px rgba(0, 255, 255, 0.5));
+  will-change: auto;
+}
+
+/* Dahoomy Watermark Container */
+[data-theme="dahoomy-999"] .dahoomy-watermark {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image: url("/images/dahoomy-999.png");
+  background-size: 45%;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.08;
+  filter: drop-shadow(0 0 15px rgba(0, 255, 255, 0.6));
+  will-change: auto;
+}
+
+/* Subtly Floating Watermarks */
+[data-theme="dahoomy-999"] .gateway-watermark-left,
+[data-theme="dahoomy-999"] .gateway-watermark-right {
+  filter: drop-shadow(0 0 15px rgba(0, 255, 255, 0.5));
+  opacity: 0.05;
+}
+
+/* Dahoomy Logo Glow Effect */
+[data-theme="dahoomy-999"] .dahoomy-logo-glow {
+  filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.4)) 
+          drop-shadow(0 0 15px rgba(0, 255, 255, 0.3))
+          drop-shadow(0 0 25px rgba(0, 255, 255, 0.15));
+  transition: filter 0.3s ease;
+}
+
+[data-theme="dahoomy-999"] .dahoomy-logo-glow:hover {
+  filter: drop-shadow(0 0 12px rgba(0, 255, 255, 0.6)) 
+          drop-shadow(0 0 20px rgba(0, 255, 255, 0.4))
+          drop-shadow(0 0 35px rgba(0, 255, 255, 0.2));
+}
+
+/* Dahoomy Image Box Shadow - Neon Blue */
+[data-theme="dahoomy-999"] .dahoomy-image-box {
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4),
+              0 0 30px rgba(0, 255, 255, 0.2),
+              inset 0 0 15px rgba(0, 255, 255, 0.1);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+[data-theme="dahoomy-999"] .dahoomy-image-box:hover {
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.6),
+              0 0 40px rgba(0, 255, 255, 0.3),
+              inset 0 0 20px rgba(0, 255, 255, 0.15);
+}
+
+/* Neon Cyan Glow Pulse Animation */
+@keyframes dahoomy-glow-pulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.3));
+  }
+  50% {
+    filter: drop-shadow(0 0 15px rgba(0, 255, 255, 0.6));
+  }
+}
+
+[data-theme="dahoomy-999"] .dahoomy-glow-pulse {
+  animation: dahoomy-glow-pulse 3s ease-in-out infinite;
+}
+
+/* Particle animation */
+@keyframes particle-fade {
+  from {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translate(var(--tx), var(--ty)) scale(0.5);
+  }
+}
+
+/* Glassmorphism Effects */
+.glassmorphism {
+  background: rgba(20, 20, 30, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glassmorphism-themed {
+  background: rgba(20, 20, 30, 0.25);
+  backdrop-filter: blur(12px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glassmorphism-glow {
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+/* Smooth Page Transitions */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Ornate border decoration */
+.ornate-border {
+  position: relative;
+}
+
+.ornate-border::before,
+.ornate-border::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 3px solid oklch(0.72 0.14 75);
+}
+
+.ornate-border::before {
+  top: -5px;
+  right: -5px;
+  border-left: none;
+  border-bottom: none;
+}
+
+.ornate-border::after {
+  bottom: -5px;
+  left: -5px;
+  border-right: none;
+  border-top: none;
+}
+
+/* Dahoomy 999 Neon Blue Glow Effects */
+[data-theme="dahoomy-999"] .dahoomy-logo-neon {
+  filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.5)) 
+          drop-shadow(0 0 15px rgba(0, 255, 255, 0.3));
+}
+
+[data-theme="dahoomy-999"] .dahoomy-logo-neon:hover {
+  filter: drop-shadow(0 0 12px rgba(0, 255, 255, 0.7)) 
+          drop-shadow(0 0 25px rgba(0, 255, 255, 0.4));
+}
+
+/* NEON GLITCH EFFECT for Victory Logo */
+@keyframes neon-glitch {
+  0%, 100% {
+    filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.5)) 
+            drop-shadow(0 0 15px rgba(255, 0, 0, 0.3));
+    clip-path: inset(0 0 0 0);
+  }
+  20% {
+    filter: drop-shadow(0 0 15px rgba(0, 255, 255, 0.7)) 
+            drop-shadow(0 0 20px rgba(255, 0, 0, 0.5));
+    clip-path: inset(2px 0 1px 0);
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.8)) 
+            drop-shadow(0 0 25px rgba(255, 0, 0, 0.6));
+    clip-path: inset(1px 0 2px 0);
+    transform: translate(2px, -2px);
+  }
+  60% {
+    filter: drop-shadow(0 0 15px rgba(0, 255, 255, 0.6)) 
+            drop-shadow(0 0 18px rgba(255, 0, 0, 0.4));
+    clip-path: inset(0 2px 0 1px);
+    transform: translate(-1px, 1px);
+  }
+  80% {
+    filter: drop-shadow(0 0 18px rgba(0, 255, 255, 0.7)) 
+            drop-shadow(0 0 22px rgba(255, 0, 0, 0.5));
+    clip-path: inset(1px 1px 0 0);
+    transform: translate(1px, -1px);
+  }
+}
+
+.animate-neon-glitch {
+  animation: neon-glitch 0.4s ease-in-out infinite;
+}
+
+/* NEON PULSE GLOW for Victory Celebrations */
+@keyframes neon-pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.4),
+                0 0 20px rgba(255, 0, 0, 0.2),
+                inset 0 0 10px rgba(0, 255, 255, 0.1);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8),
+                0 0 40px rgba(255, 0, 0, 0.5),
+                inset 0 0 20px rgba(0, 255, 255, 0.2);
+    transform: scale(1.02);
+  }
+}
+
+.animate-victory-pulse {
+  animation: neon-pulse-glow 1.5s ease-in-out infinite;
+}
+
+/* Dahoomy 999 Scrollbar Styling */
+[data-theme="dahoomy-999"] [data-slot="scroll-area-thumb"] {
+  background-color: rgba(6, 182, 212, 0.6);
+  transition: background-color 0.3s ease;
+}
+
+/* Hide scrollbar but allow scrolling */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
+}
+
+[data-theme="dahoomy-999"] [data-slot="scroll-area-thumb"]:hover {
+  background-color: rgba(0, 255, 255, 0.8);
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.5);
+}
+
+/* Gold Theme Scrollbar Styling */
+[data-theme="gold"] [data-slot="scroll-area-thumb"] {
+  background-color: rgba(197, 160, 89, 0.6);
+}
+
+[data-theme="gold"] [data-slot="scroll-area-thumb"]:hover {
+  background-color: rgba(255, 215, 0, 0.8);
+}
+
+/* Floating Animation for Discord Status Card */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: float 3.5s ease-in-out infinite;
+}
+
+/* Discord Status Card Animations */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-down {
+  animation: slideDown 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* RTL (Right-to-Left) Support for Arabic */
+html[dir="rtl"],
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.rtl [dir="ltr"],
+.rtl .ltr {
+  direction: ltr;
+  text-align: left;
+}
+
+/* RTL Grid fixes */
+[dir="rtl"] .grid {
+  direction: rtl;
+}
+
+/* RTL Flex fixes */
+[dir="rtl"] .flex {
+  direction: rtl;
+}
+
+/* Discord Status Card Arabic Typography */
+.discord-status-card {
+  font-family: 'Cairo', 'Almarai', 'Arial', sans-serif;
+  direction: rtl;
+  text-align: right;
+}
+
+/* Responsive Auto-Fit Grid - Fluid Layout System */
+.auto-fit-grid {
+  display: grid;
+}
+
+/* Scrollbar styles for modern browsers */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(6, 182, 212, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(6, 182, 212, 0.4);
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(6, 182, 212, 0.7);
+}
+
+/* Prevent horizontal scroll overflow */
+html, body {
+  overflow-x: hidden !important;
+}
+
+
